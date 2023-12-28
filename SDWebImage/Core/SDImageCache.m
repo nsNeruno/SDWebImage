@@ -63,7 +63,7 @@ static NSString * _defaultDiskCacheDirectory;
 @property (nonatomic, strong, readwrite, nonnull) id<SDDiskCache> diskCache;
 @property (nonatomic, copy, readwrite, nonnull) SDImageCacheConfig *config;
 @property (nonatomic, copy, readwrite, nonnull) NSString *diskCachePath;
-@property (nonatomic, strong, nonnull) dispatch_queue_t ioQueue;
+@property (nonatomic, assign, nonnull) dispatch_queue_t ioQueue;
 
 @end
 

@@ -14,7 +14,7 @@
 
 @interface SDCallbackQueue ()
 
-@property (nonatomic, strong, nonnull) dispatch_queue_t queue;
+@property (nonatomic, assign, nonnull) dispatch_queue_t queue;
 
 @end
 

@@ -92,7 +92,7 @@ typedef void(^SDWebImagePrefetcherCompletionBlock)(NSUInteger noOfFinishedUrls, 
  * @note The call is asynchronously to avoid blocking target queue. (see SDCallbackPolicyDispatch)
  * @note The delegate queue should be set before any prefetching start and may not be changed during prefetching to avoid thread-safe problem.
  */
-@property (strong, nonatomic, nonnull) dispatch_queue_t delegateQueue API_DEPRECATED("Use SDWebImageContextCallbackQueue context param instead, see SDCallbackQueue", macos(10.10, 10.10), ios(8.0, 8.0), tvos(9.0, 9.0), watchos(2.0, 2.0));
+@property (assign, nonatomic, nonnull) dispatch_queue_t delegateQueue API_DEPRECATED("Use SDWebImageContextCallbackQueue context param instead, see SDCallbackQueue", macos(10.10, 10.10), ios(8.0, 8.0), tvos(9.0, 9.0), watchos(2.0, 2.0));
 
 /**
  * The delegate for the prefetcher. Defaults to nil.
